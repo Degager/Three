@@ -9,6 +9,14 @@ for x in range(100):
     random_number = random.randrange(0,1000000001)
     number_list.append(random_number)
 
+number_list.sort()
+
+three_list = list()
+for number in number_list:
+    if number % 3 == 0:
+        three_list.append(number)
+
+
 for number in number_list:
     if number % 3 == 0:
         if number < min_number:
